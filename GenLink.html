@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Link Generator</title>
+    <title>Citation Link Generator for The Urantia Book text</title>
 
     <style>
         .fieldstable {
@@ -652,7 +652,7 @@
     </script>
 </head>
 <body>
-    <h1>Urantia Book Link Generator</h1>
+    <h1>Citation Link Generator for The Urantia Book text</h1>
     <form onsubmit="event.preventDefault(); generateLinks();">
 		<table class="fieldstable">
 			<tr>
@@ -670,23 +670,21 @@
 		</table>
 		
 		<br><br>
-		<button type="submit">Generate Link</button>
+		<button type="submit">Generate Links</button>
     </form>
     <br>
-    <p>Generated links:</p>
-	
 		<table>
+			<tr>
+				<td><label for="generatedLinkEN">English:</label></td>
+				<td><a id="generatedLinkEN" href="#" target="_blank"></a></td>
+			</tr>
 			<tr>
 				<td><label for="generatedLinkPT">Português:</label></td>
 				<td><a id="generatedLinkPT" href="#" target="_blank"></a></td>
 			</tr>
 			<tr>
-				<td><label for="generatedLinkSPInt">Espanhol Internacional:</label></td>
+				<td><label for="generatedLinkSPInt">Español Internacional:</label></td>
 				<td><a id="generatedLinkSPInt" href="#" target="_blank"></a></td>
-			</tr>
-			<tr>
-				<td><label for="generatedLinkEN">Inglês:</label></td>
-				<td><a id="generatedLinkEN" href="#" target="_blank"></a></td>
 			</tr>
 		</table>
 	
